@@ -1,6 +1,6 @@
 Daftar smell code yang ditemukan:
 
-smell code	: bloaters - long method/m
+smell code	: bloaters - long method
 penyebab		: developer hanya menambahkan code ke function main
 solusi		: extract method
 
