@@ -61,6 +61,12 @@ public class StudentSystem {
         }
     }
 
+    /*
+     * smell code	: bloaters - long parameter list
+     * penyebab		: ada lebih dari 4 parameter untuk suatu method
+     * solusi		: introduce parameter object
+     */
+    
     // Add Student to the System by Providing Information or by CSV File
     public void addStudent(String newName, int newID, double newGPA, String newYear, String newDepartment, boolean byCSV) {
         Student newStudent = new Student();
@@ -130,6 +136,13 @@ public class StudentSystem {
             case "ID" -> sortStudentsBy("ID");
             case "Name" -> sortStudentsBy("Name");
             case "Year" -> sortStudentsBy("Year");
+            
+/*
+ * smell code	: dispensables - dead code
+ * penyebab		: ada bagian code yang tidak memiliki fungsi apa pun
+ * solusi		: hapus dead code
+ */            
+            
             case "Department" -> sortStudentsBy("Department");
         }
         
