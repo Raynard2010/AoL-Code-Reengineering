@@ -15,3 +15,11 @@ solusi		: encapsulate field
 smell code	: dispensables - duplicate code,
 penyebab		: ada bagian code yang memiliki fungsi mirip dengan bagian code yang lain,
 solusi		: extract method
+
+smell code	: bloaters - long parameter list,
+penyebab		: ada lebih dari 4 parameter untuk suatu method,
+solusi		: introduce parameter object
+
+smell code	: dispensables - dead code,
+penyebab		: ada bagian code yang tidak memiliki fungsi apa pun,
+solusi		: hapus dead code
