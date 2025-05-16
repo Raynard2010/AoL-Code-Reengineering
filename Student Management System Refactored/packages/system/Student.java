@@ -11,16 +11,28 @@ public class Student {
 
     public Student() {}
 
-    public Student(int ID, String name, double GPA, String year, String department) {
-        this.ID = ID;
-        this.name = name;
-        this.GPA = GPA;
-        this.year = year;
-        this.department = department;
-    }
-
 	public String getName() {
 		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setID(int iD) {
+		ID = iD;
+	}
+
+	public void setGPA(double gPA) {
+		GPA = gPA;
+	}
+
+	public void setYear(String year) {
+		this.year = year;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
 	}
 
 	public int getID() {
