@@ -9,8 +9,8 @@ penyebab		: masih ada comments untuk menjelaskan cara kerja bagian code,
 solusi		: extract method
 
 smell code	: dispensables - data class,
-penyebab		: ada public field,
-solusi		: encapsulate field
+penyebab		: ada public field dan tidak memiliki method apa pun,
+solusi		: encapsulate field dan tambahkan method
 
 smell code	: dispensables - duplicate code,
 penyebab		: ada bagian code yang memiliki fungsi mirip dengan bagian code yang lain,
@@ -23,7 +23,3 @@ solusi		: introduce parameter object
 smell code	: dispensables - dead code,
 penyebab		: ada bagian code yang tidak memiliki fungsi apa pun,
 solusi		: hapus dead code
-
-smell code	: imperative abstraction
-penyebab		: ada class yang merupakan sebuah proses (hanya ada satu method)
-solusi		: gabungkan class ke class lain
