@@ -23,3 +23,7 @@ solusi		: introduce parameter object
 smell code	: dispensables - dead code,
 penyebab		: ada bagian code yang tidak memiliki fungsi apa pun,
 solusi		: hapus dead code
+
+smell code	: imperative abstraction
+penyebab		: ada class yang merupakan sebuah proses (hanya ada satu method)
+solusi		: gabungkan class ke class lain
