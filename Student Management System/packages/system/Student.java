@@ -4,8 +4,8 @@ package packages.system;
 
 /*
  * smell code	: dispensables - data class
- * penyebab		: ada public field
- * solusi		: encapsulate field
+ * penyebab		: ada public field dan tidak memiliki method apa pun
+ * solusi		: encapsulate field dan tambahkan method
  */
 
 public class Student {
