@@ -6,7 +6,10 @@ import packages.system.*;
 public class App {
     static Scanner scanner = new Scanner(System.in);
     static StudentSystem system = new StudentSystem();
-    
+    static SummaryGenerator summaryGenerator = new SummaryGenerator(system);
+    static StudentFilter studentFilter = new StudentFilter(system);
+    static StudentSorter studentSorter = new StudentSorter(system);
+
 	private static void printMenu() {
         System.out.println("Choose an option:");
         System.out.println(" 1. Add Student.");
@@ -39,7 +42,7 @@ public class App {
 
             switch (choice) {
                 case 1:     
-                	AddStudent.addStudent();
+                	system.addStudent();
                     break;
 
                 case 2:             
@@ -48,7 +51,7 @@ public class App {
                     break;
 
                 case 3:             
-                	UpdateStudent.updateStudent();
+                	system.updateStudent();
                     break;
 
                 case 4:             
@@ -57,31 +60,31 @@ public class App {
                     break;
 
                 case 5:             
-                	ListAndSortStudents.listAndSortStudents();
+                	studentSorter.listAndSortStudents();
                     break;
 
                 case 6:             
-                	FilterStudents.filterStudents();
+                	studentFilter.filterStudents();
                     break;
 
                 case 7:             
-                    system.countTotalStudents();
+                	summaryGenerator.countTotalStudents();
                     break;
 
                 case 8:             
-                    system.calculateAverageGPA();
+                	summaryGenerator.calculateAverageGPA();
                     break;
 
                 case 9:             
-                    system.displayTop5();
+                	summaryGenerator.displayTop5();
                     break;
 
                 case 10:            
-                    system.displayFailingStudents();
+                	summaryGenerator.displayFailingStudents();
                     break;
 
                 case 11:            
-                	GenerateSummary.generateSummary();
+                	summaryGenerator.generateSummary();
                     break;
 
                 case 0:             
